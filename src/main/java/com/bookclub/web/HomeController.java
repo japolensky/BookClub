@@ -1,6 +1,7 @@
-package web;
+package com.bookclub.web;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -20,7 +21,7 @@ public class HomeController {
         return "about";
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = "/contract")
+    @RequestMapping(method = RequestMethod.GET, path = "/contact")
     public String showContactUs(Model model)
     {
         return "contact";
